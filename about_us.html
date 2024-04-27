@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GabayGinhawa</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="about_us.css">
+</head>
+<header>
+    <nav style="background-color: white;">
+        <div class="logo-container">
+            <a href="your-homepage-url.html">
+                <img src="gg-logo.png" alt="GabayGinhawa-logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="#">TRACKERS</a></li>
+            <li><a href="#">WORKOUTS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+         
+        </ul>
+        
+        <div class="user-controls">
+            <div class="user-controls">
+
+            <div class="notification-icon">
+                <img src="notif.png" alt="Notification Bell">
+
+            </div>
+           
+                <div class="profile-container">
+                    <div class="profile-hover">
+                        <img class="profile-image" src="profile.png" alt="User Profile">
+                        <ul class="dropdown-content">
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="SignUp.html">Sign Up</a></li> 
+                        </ul>
+                    </div>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                </nav>
+            </header>
+
+            /* NAV BAR /
+
+            <section class="image-header">
+                <img src="about_header.png" alt="Header Image" />
+            </section>
+
+        <h1><i>Kumusta?</h1></i>
+        <p class="p1">Hello, kaibigan! We are thrilled to welcome you to GabayGinhawa,<br>
+            your digital companion on the journey to better health and well-being. <br>
+            Here, you'll find a warm and inviting space designed
+             specifically<br> with Filipino users in mind.
+
+            <div class="full-width-div">
+                
+                <h1 style="color: white; margin-bottom: -18px;"><b><i>Our Mission</i></b></h1>
+                <p>In a country where access to healthcare and health information
+    can sometimes be challenging, GabayGinhawa seeks to <br>bridge the
+     gap by offering a comprehensive and personalized wellness
+     tracking system.
+<br>
+<br>
+Our platform goes beyond mere functionality; it's about creating a
+    sense of belonging and familiarity for Filipino users. We understand<br>
+        that many health apps may feel foreign or intimidating due to their
+        lack of Filipino representation and customization options.<br>
+        <br>
+         Therefore,
+        GabayGinhawa strives to be different—it's not just a tool for health
+        tracking, but a digital companion that feels like home.</p>    <br>       
+    </div>
+
+
+
+    <h1><b><i>How GabayGinhawa Helps</i></b></h1>
+    <p class="p1">GabayGinhawa holds significant importance within the Filipino community as it 
+        addresses the critical need for culturally sensitive and accessible health solutions 
+        tailored to Filipino values and lifestyles. By providing a platform that feels familiar 
+        and welcoming, GabayGinhawa aims to empower Filipinos to prioritize their health and well-being 
+        with confidence and ease.</p>
+
+<p class="p1">       Through its comprehensive and personalized wellness tracking system, GabayGinhawa not only bridges the gap in health app representation but also fosters a sense of community and empowerment, ultimately contributing to the collective goal of promoting a healthier and happier Filipino population.</p>
+</p> 
+<br>
+<Br>
+
+<div class="full-width-div2">
+    <section class="image-header2">
+    <img src="about_header2.png" alt="Header Image" />
+    <br>
+</section>
+</div>
+        <footer class="footer">
+            <div class="top-part">
+                <img src="logo-white.png" alt="Logo" class="logo">
+                <div class="links">
+                    <a href="#">Dashboard</a>
+                    <a href="#">Workouts</a>
+                    <a href="#">Trackers</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+    
+            <div class="second-top-part">
+                <div class="links">
+                    <center><a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a></center>
+        
+                </div>
+            </div>
+            <div class="bottom-part"><br>
+                <center><p><i>© 2024 GabayGinhawa, Inc.</i></p></center>
+            </div>
+        </footer>
+
+            <script>
+ function toggleMenu() {
+      var navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+
+    // Add an event listener to close the menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.remove('show');
+      });
+    });
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get the profile hover element
+                var profileHover = document.querySelector('.profile-hover');
+            
+                // Add a click event listener to toggle the 'clicked' class
+                profileHover.addEventListener('click', function(event) {
+                    this.classList.toggle('clicked');
+                    event.stopPropagation(); // Prevent the click event from reaching the document
+                });
+            
+                // Add a click event listener to the document to close the dropdown when clicking outside
+                document.addEventListener('click', function(event) {
+                    var dropdownContent = document.querySelector('.profile-hover .dropdown-content');
+                    var isClickedInsideDropdown = profileHover.contains(event.target) || dropdownContent.contains(event.target);
+            
+                    if (!isClickedInsideDropdown) {
+                        profileHover.classList.remove('clicked');
+                    }
+                });
+            });
+              </script>
+
+<body>
