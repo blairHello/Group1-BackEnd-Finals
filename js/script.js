@@ -72,3 +72,15 @@ document.getElementById('start').addEventListener('click', function() {
     }, 4000); // 4 seconds delay
   });
   
+
+  // QUESTIONAIRE
+
+  function showPage(pageId) {
+    // Hide all pages
+    document.getElementById('homePage').style.display = 'none';
+    document.getElementById('aboutPage').style.display = 'none';
+    document.getElementById('contactPage').style.display = 'none';
+  
+    // Show the selected page
+    document.getElementById(pageId + 'Page').style.display = 'block';
+  }
