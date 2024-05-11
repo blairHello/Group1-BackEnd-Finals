@@ -73,15 +73,17 @@ document.getElementById('start').addEventListener('click', function() {
   });
   
 
-  // QUESTIONAIRE
+  // BUTTONS
 
-  function showPage(pageId) {
-    // Hide all pages
-    document.getElementById('personal').style.display = 'none';
-    document.getElementById('activity').style.display = 'none';
-    document.getElementById('foodandwater').style.display = 'none';
-    document.getElementById('sleep').style.display = 'none';
-    document.getElementById('finish').style.display = 'none';
-    // Show the selected page
-    document.getElementById(pageId + 'Page').style.display = 'block';
-  }
+    document.getElementById("button1").onclick = function () {
+        location.href = "www.yoursite.com";
+    };
+      document.getElementById("button2").onclick = function () {
+        location.href = "www.yoursite.com";
+    };
+      document.getElementById("button3").onclick = function () {
+        location.href = "www.yoursite.com";
+    };
+
+
+  
