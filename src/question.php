@@ -104,7 +104,7 @@ $conn->close();
 
       <!-- About page content (hidden by default) -->
       <div id="foodandwater" style="display: none">
-        <h2>About Us</h2>
+        <h2>Food and Water</h2>
         Meals per Day: <input type="text" name="meals_per_day"><br>
         Food Type: <input type="text" name="food_type"><br>
         Health Goal: <input type="text" name="health_goal"><br>
@@ -112,7 +112,7 @@ $conn->close();
 
       <!-- Contact page content (hidden by default) -->
       <div id="sleep" style="display: none">
-        <h2>Contact Us</h2>
+        <h2>Sleep</h2>
         Sleep Hours: <input type="text" name="sleep_hours"><br>
         Bed Time: <input type="time" name="bed_time"><br>
         Wake Time: <input type="time" name="wake_time"><br>
@@ -147,10 +147,11 @@ $conn->close();
     </form>
 
     <div>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
+      <button onclick="showPage('personal')"></button>
+      <button onclick="showPage('foodandwater')"></button>
+      <button onclick="showPage('activity')"></button>
+      <button onclick="showPage('sleep')"></button>
+      <button onclick="showPage('health')"></button>
     </div>
   </div>
 </body>
