@@ -76,13 +76,13 @@ document.getElementById('start').addEventListener('click', function() {
   // BUTTONS
 
     document.getElementById("button1").onclick = function () {
-        location.href = "www.yoursite.com";
+       window.location.href = '/src/registration';
     };
       document.getElementById("button2").onclick = function () {
-        location.href = "www.yoursite.com";
+        window.location.href = "/src/registration";
     };
       document.getElementById("button3").onclick = function () {
-        location.href = "www.yoursite.com";
+        window.location.href = "/src/registration";
     };
 
 
