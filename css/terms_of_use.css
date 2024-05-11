@@ -301,7 +301,7 @@ margin-top: 20px;
 h2 {
   font-size: 10px; /* Adjust the size as needed */
   color: black; /* This is a blue color, you can use any color you like */
-  margin-left: 100px; /* Adjust the margin as needed */4
+  margin-left: 100px; /* Adjust the margin as needed */
     margin-right: 105px;
   font-family: 'Poppins', sans-serif;
 font-weight: bold;
@@ -393,3 +393,5 @@ p {
       /* ... other styles ... */
   }
 
+}
+}

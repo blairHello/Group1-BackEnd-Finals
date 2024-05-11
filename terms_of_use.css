@@ -280,64 +280,29 @@ margin-top: 20px;
 
 .p1 {
     margin-left: 105px; /* Adjust the margin as needed */
-    margin-right: 30px;
+    margin-right: 105px;
     color: black;
     font-size: 19px;
     font-family: 'Poppins', sans-serif;
 }
 
-.full-width-div {
-  background-color: #FFB703;
-  width: 100%;
-  margin-top: 60px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
-
-  padding: 20px 0; /* Adjust the padding to increase or decrease the height of the div */
-}
-
-.full-width-div p {
-  margin-top: 25px; /* Increase top margin */
-  margin-right: 55px; /* Increase right margin */
-  margin-bottom: 25px; /* Increase bottom margin */
-  margin-left: 105px; /* Adjust the margin as needed */
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  font-size: 19px;
-  text-align: left;
-color: black;
-
-}
-
-.polaroid {
-  margin-left: 80px; /* Adjust the margin as needed */
-margin-top: -20px;
-  width: 350px;
-  height: 490px;
-  text-align: center;
-}
-
-
-.polaroid {
-  flex: 0 0 auto; /* Do not grow, do not shrink, and base width on content */
-  margin-right: 20px; /* Adds space between the image and the text */
+.p2 {
+    margin-left: 105px; /* Adjust the margin as needed */
+    margin-right: 105px;
+    color: black;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .text-content {
   flex: l; /* Allows the text content to grow and fill the remaining space */
 }
 
-.image-header2 img {
-  width: 100%; /* Ensure the image takes the full width of the container */
-  height: auto; /* Maintain the aspect ratio of the image */
-  display: block; /* Remove any default inline spacing */
-  margin-top: 10px;
-
-}
-
 h2 {
-  font-size: 50px; /* Adjust the size as needed */
-  color: white; /* This is a blue color, you can use any color you like */
-  margin-left: 100px; /* Adjust the margin as needed */
-  margin-right: 100px;
+  font-size: 10px; /* Adjust the size as needed */
+  color: black; /* This is a blue color, you can use any color you like */
+  margin-left: 100px; /* Adjust the margin as needed */4
+    margin-right: 105px;
   font-family: 'Poppins', sans-serif;
 font-weight: bold;
 text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -360,7 +325,7 @@ margin-left: 100px;
 }
 
 h2 {
-  font-size: 50px; /* Default font size for larger screens */
+  font-size: 20px; /* Default font size for larger screens */
   /* ... other styles ... */
 }
 
@@ -401,18 +366,6 @@ p {
   /* ... other styles ... */
 }
 
-.full-width-div {
-  background-color: #FFB703;
-  width: 100%;
-  padding: 20px 0;
-  /* ... other styles ... */
-}
-
-.image-header2 img {
-  width: 100%;
-  height: auto;
-  /* ... other styles ... */
-}
 
 /* Responsive styles for screens that are 768px wide or less */
 @media (max-width: 768px) {
@@ -427,12 +380,7 @@ p {
   }
 
   /* Adjust padding and margins as needed for smaller screens */
-  .full-width-div {
-      padding: 15px 0;
-      /* ... other styles ... */
-  }
-}
-
+ 
 /* Responsive styles for screens that are 480px wide or less */
 @media (max-width: 480px) {
   h1 {
@@ -445,18 +393,3 @@ p {
       /* ... other styles ... */
   }
 
-  /* Further adjust padding and margins for very small screens */
-  .full-width-div {
-      padding: 10px 0;
-      /* ... other styles ... */
-  }
-}
-
-.full-width-div2 {
-  background-color: #FFB703;
-  width: 100%;
-  margin-bottom: -100px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
-
-  padding: 20px 0; /* Adjust the padding to increase or decrease the height of the div */
-}
