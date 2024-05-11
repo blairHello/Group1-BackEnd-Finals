@@ -77,10 +77,11 @@ document.getElementById('start').addEventListener('click', function() {
 
   function showPage(pageId) {
     // Hide all pages
-    document.getElementById('homePage').style.display = 'none';
-    document.getElementById('aboutPage').style.display = 'none';
-    document.getElementById('contactPage').style.display = 'none';
-  
+    document.getElementById('personal').style.display = 'none';
+    document.getElementById('activity').style.display = 'none';
+    document.getElementById('foodandwater').style.display = 'none';
+    document.getElementById('sleep').style.display = 'none';
+    document.getElementById('finish').style.display = 'none';
     // Show the selected page
     document.getElementById(pageId + 'Page').style.display = 'block';
   }
