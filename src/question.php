@@ -14,8 +14,8 @@ if ($conn->connect_error) {
 }
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO questionnaire (name, age, gender, height, weight, activity_level, exercise_type, sleep_hours, bed_time, wake_time, meals_per_day, food_type, health_goal) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sisddssssisss", $name, $age, $gender, $height, $weight, $activity_level, $exercise_type, $sleep_hours, $bed_time, $wake_time, $meals_per_day, $food_type, $health_goal);
+$stmt = $conn->prepare("INSERT INTO questionnaire ( age, gender, height, weight, activity_level, exercise_type, sleep_hours, bed_time, wake_time, meals_per_day, food_type, health_goal) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("sisddssssisss", $name, $age, $gender, $height, $weight, $activity_level, $exercise_type, $sleep_hours, $bed_time, $wake_time, $meals_per_day, $food_type, $water_intake, $health_goal);
 
 // Set parameters and execute
 //Personal
@@ -34,9 +34,11 @@ $sleep_hours = $_POST['sleep_hours'];
 $bed_time = $_POST['bed_time'];
 $wake_time = $_POST['wake_time'];
 
-//Health Goal
+//Food and Water
 $meals_per_day = $_POST['meals_per_day'];
 $food_type = $_POST['food_type'];
+
+//Health Goal
 $health_goal = $_POST['health_goal'];
 
 $stmt->execute();
