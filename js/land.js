@@ -68,7 +68,7 @@ document.getElementById('start').addEventListener('click', function() {
   
     // After some delay, redirect to the next page
     setTimeout(function() {
-      window.location.href = '/WEBDEB2/wow/question.html';
+      window.location.href = 'src/question.php';
     }, 4000); // 4 seconds delay
   });
   
@@ -76,13 +76,13 @@ document.getElementById('start').addEventListener('click', function() {
   // BUTTONS
 
     document.getElementById("button1").onclick = function () {
-       window.location.href = '/src/registration';
+       window.location.href = '/src/terms_of_use.html';
     };
       document.getElementById("button2").onclick = function () {
-        window.location.href = "/src/registration";
+        window.location.href = "/src/terms_of_use.html";
     };
       document.getElementById("button3").onclick = function () {
-        window.location.href = "/src/registration";
+        window.location.href = "/src/registration.php";
     };
 
 

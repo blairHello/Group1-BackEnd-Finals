@@ -30,17 +30,55 @@ html, body{
 }
 
 #loader {
+    display: none; /* Hide the loader initially */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure loader is on top of other elements */
+    text-align: center; /* Center the loader content */
   }
-
+  
+  .loader-inner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular loader */
+    border: 5px solid #fff; /* White border */
+    border-top-color: #f00; /* Red color for top half */
+    animation: spin 1s linear infinite; /* Animation for spinning */
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  #load-button {
+    /* Style your button as desired */
+  }
+  
+  /* Add loader fade-in/out animation (optional) */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
   #loader img {
     width: 100px; /* Adjust size as needed */
     height: auto;

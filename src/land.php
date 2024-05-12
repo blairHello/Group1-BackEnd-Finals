@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GabayGinhawa | Health Wellnes Tracker</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/GabayGinhawa-logo.png"/>
-    <link rel="stylesheet" href="/css/land.css"/>
+    <link rel="icon" type="image/x-icon" href="/assets/GabayGinhawa-logo.png" />
+    <link type="css" rel="stylesheet" href="/css/land.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,11 +20,8 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div id="loader" style="display: none">
-      <img id="loadimage" src="/assets/GabayGinhawa-logo.png" />
-    </div>
 
+  <body>
     <div id="Container1">
       <div id="landcont1" class="hidden">
         <h1 class="welcome poppins-black hidden">Ang iyong</h1>
@@ -125,6 +119,10 @@
           <button class="start3 poppins-semibold">Sign up Now!</button>
         </div>
       </div>
+    </div>
+
+    <div id="loader" style="display: none">
+      <img id="loadimage" src="/assets/GabayGinhawa-logo.png" />
     </div>
   </body>
   <script
