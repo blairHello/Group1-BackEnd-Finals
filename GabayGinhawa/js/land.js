@@ -75,6 +75,7 @@ document.getElementById('start').addEventListener('click', function() {
 
   // BUTTONS
 
+<<<<<<< HEAD:GabayGinhawa/js/land.js
   function redirectToRegistration() {
     window.location.href = 'registration.php';
 }
@@ -117,5 +118,17 @@ document.getElementById('but3').addEventListener('click', redirectToRegistration
                   }
               });
           });
+=======
+    document.getElementById("button1").onclick = function () {
+       window.location.href = '/src/terms_of_use.html';
+    };
+      document.getElementById("button2").onclick = function () {
+        window.location.href = "/src/terms_of_use.html";
+    };
+      document.getElementById("button3").onclick = function () {
+        window.location.href = "/src/registration.php";
+    };
+
+>>>>>>> d8e852937feb1c509330a1fccefbdd64e8fb4fad:js/land.js
 
   
