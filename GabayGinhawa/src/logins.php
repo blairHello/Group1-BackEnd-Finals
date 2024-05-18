@@ -14,32 +14,51 @@ if (isset($_POST["submit"])) {
     $adminRow = mysqli_fetch_assoc($adminResult);
 
     if (mysqli_num_rows($userResult) > 0) {
-        if ($password == $userRow["password"]) {
+        $storedPassword = $userRow["password"];
+        if (password_verify($password, $storedPassword)) {
             $_SESSION["login"] = true;
             $_SESSION["id"] = $userRow["id"];
-
-            // Redirect to dashboard.php for non-admin users
             header("Location: dashboard.php");
-            exit; // Terminate script execution
+            exit;
+        } elseif ($password == $storedPassword) {
+            // Password matches in plain text, rehash and update the stored password
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+            $updateQuery = "UPDATE tb_user SET password = '$hashedPassword' WHERE email = '$email'";
+            mysqli_query($conn, $updateQuery);
+
+            $_SESSION["login"] = true;
+            $_SESSION["id"] = $userRow["id"];
+            header("Location: dashboard.php");
+            exit;
         } else {
-            echo "<script> alert ('Incorrect password.'); </script>";
+            echo "<script>alert('Incorrect password.');</script>";
         }
     } elseif (mysqli_num_rows($adminResult) > 0) {
-        if ($password == $adminRow["password"]) {
+        $storedPassword = $adminRow["password"];
+        if (password_verify($password, $storedPassword)) {
             $_SESSION["login"] = true;
             $_SESSION["id"] = $adminRow["id"];
-
-            // Redirect to admin.php
             header("Location: admin.php");
-            exit; // Terminate script execution
+            exit;
+        } elseif ($password == $storedPassword) {
+            // Password matches in plain text, rehash and update the stored password
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+            $updateQuery = "UPDATE tb_admin SET password = '$hashedPassword' WHERE email = '$email'";
+            mysqli_query($conn, $updateQuery);
+
+            $_SESSION["login"] = true;
+            $_SESSION["id"] = $adminRow["id"];
+            header("Location: admin.php");
+            exit;
         } else {
-            echo "<script> alert ('Incorrect password.'); </script>";
+            echo "<script>alert('Incorrect password.');</script>";
         }
     } else {
-        echo "<script> alert ('Email not registered.'); </script>";
+        echo "<script>alert('Email not registered.');</script>";
     }
 }
 ?>
+
 
 
 <!DOCTYPE html>

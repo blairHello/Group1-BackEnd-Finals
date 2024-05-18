@@ -60,13 +60,7 @@
 </div>
 </html>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "registration_login_db";
-
-// Create connection
-$connection = new mysqli($servername, $username, $password, $database);
+include "config.php";
 
 // Query to get all entries from tb_water_tracker along with user names
 $sql = "SELECT tb_water_tracker.*, tb_users.user_name FROM tb_water_tracker JOIN tb_users ON tb_water_tracker.user_id = tb_users.id";

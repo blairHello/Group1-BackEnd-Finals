@@ -1,12 +1,5 @@
 <?php
- $servername = "localhost";
- $username = "root";
- $password = "";
- $database = "registration_login_db";
-
- 
-    //Create connection
-    $connection = new mysqli($servername, $username, $password, $database);
+include "config.php";
 
 
 $id ="";

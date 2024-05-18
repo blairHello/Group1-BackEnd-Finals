@@ -1,4 +1,6 @@
 <?php
+include "config.php";
+
 // Start session
 session_start();
 
@@ -13,14 +15,6 @@ $user_id = $_SESSION['id'];
 
 if ( isset($_GET["id"]) ) {
     $id = $_GET["id"];
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "registration_login_db";
-
-    // Create connection
-    $connection = new mysqli($servername, $username, $password, $database);
 
     // DELETE WATER ENTRY IN DATABASE
     $sql = "DELETE FROM tb_water_tracker WHERE id=$id AND user_id=$user_id";
