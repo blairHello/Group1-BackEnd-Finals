@@ -1,0 +1,49 @@
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <ul>
+                <li>
+                    <img class="icon" src="http://res.cloudinary.com/dikpupfzu/image/upload/v1525474712/Profile_2x.png" alt="">
+                    <span class="profile">Profile</span>
+                </li>
+                <li>
+                    <img class="icon" src="http://res.cloudinary.com/dikpupfzu/image/upload/v1525474873/Settings_2x.png" alt="">
+                    <span class="list_item">General</span>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Profile Settings</h2>
+            <img class="avatar" src="profile.png" alt="">
+            <link rel="stylesheet" href="styles.css">
+            <div class="form">
+                <form action="index.html" method="post">
+                    <div class="field">
+                        <label for="first-name">First Name</label>
+                        <input class="first_name" type="text" name="first-name" value="" />
+                    </div>
+                    <div class="field">
+                        <label for="surname">Surname</label>
+                        <input class="surname" type="text" name="surname" value="" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input class="email" type="text" name="email" />
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input class="password" type="text" name="password" />
+                    </div>
+                    <div class="field">
+                        <label for="birthday">Birthday</label>
+                        <input class="birthday" type="text" name="birthday" />
+                    </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <a href="#"><button class="button_left" type="submit" name="button">Save Changes</button></a>
+                <a href="#"><button class="button_right" type="cancel" name="button">Cancel</button></a>
+            </div>
+        </div>
+    </div>
+</body>
