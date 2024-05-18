@@ -112,7 +112,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             
     <div class="container">
         <h2 class="heading">New Mood Entry</h2>
-        <p class="italic-paragraph"><i>How was your day?</i></p>
+        <p class="italic-paragraph"><i>Kumusta araw mo?</i></p>
 
         <?php
         if (!empty($errorMessage)) {
