@@ -1,0 +1,232 @@
+body, input, button, label {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('../assets/calorie_bg.jfif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.heading {
+    margin-top: 20px;
+    font-weight: 800;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #023047;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.italic-paragraph {
+    color: #ffb703;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.row-mb-3 {
+    margin-bottom: 8px; /* Add spacing between rows */
+}
+
+.custom-label {
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #023047;
+}
+
+input[type="date"],
+input[type="time"], input[type="text"], input[type="number"], .form-control,
+select.form-control {
+    width: 100%; /* Make the input full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    color: #023047;
+}
+
+/* Hide the inner spin button (up/down arrows) */
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.quality-container {
+    width: 100%;
+    background-color: #023047; /* Dark blue background */
+    padding: 7px;
+    border-radius: 30px; /* Rounded corners */
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.quality-container .form-check {
+    flex: 1 0 auto; /* Allow the items to shrink and grow as needed */
+}
+
+/* Hide the default radio button */
+.quality-container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.radio-label {
+    display: flex;
+    align-items: center;
+    background-color: #023047;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: large;
+}
+
+/* When the radio button is checked, change the style */
+.quality-container input[type="radio"]:checked + .form-check-label .radio-label {
+    background-color: #ffb703; /* Keep the background white */
+    border-color: #ffb703; /* Change the border color */
+    color: white; /* Change the text color */
+}
+
+.d-flex {
+    margin-top: 25px;
+    margin: 0 2.5%; /* Adjust as needed */
+    width: 100%;
+}
+
+#submit-button, #cancel-button {
+    border-radius: 25px; /* Adjust as needed */
+    height: 45px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+#submit-button {
+    background-color: #ffb703; /* Yellow */
+    border-color: #ffb703; /* Yellow */
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #e0a302; /* Darker Yellow */
+    border-color: #e0a302; /* Darker Yellow */
+}
+
+#cancel-button {
+    background-color: #dc3545; /* Red */
+    border-color: #dc3545; /* Red */
+    color: white;
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#cancel-button:hover {
+    background-color: #c82333; /* Darker Red */
+    border-color: #c82333; /* Darker Red */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .italic-paragraph {
+        font-size: 16px;
+    }
+
+    .radio-label {
+        width: 30px;
+        height: 30px;
+        font-size: medium;
+    }
+
+    #submit-button, #cancel-button {
+        height: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 26px;
+    }
+
+    .italic-paragraph {
+        font-size: 14px;
+    }
+
+    .radio-label {
+        width: 28px;
+        height: 28px;
+        font-size: small;
+    }
+
+    #submit-button, #cancel-button {
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .italic-paragraph {
+        font-size: 12px;
+    }
+
+    .radio-label {
+        width: 25px;
+        height: 25px;
+        font-size: smaller;
+    }
+
+    #submit-button, #cancel-button {
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 22px;
+    }
+
+    .italic-paragraph {
+        font-size: 10px;
+    }
+
+    .radio-label {
+        width: 20px;
+        height: 20px;
+        font-size: x-small;
+    }
+
+    #submit-button, #cancel-button {
+        height: 25px;
+    }
+}
