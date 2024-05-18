@@ -91,7 +91,7 @@
 <div class="card">
     <img src="https://img.youtube.com/vi/riAGh8BSjVg/maxresdefault.jpg" alt="Way of Helping">
     <div class="card-body">
-        <b>30 MIN to BURN 300 CAL | Low Impact CARDIO Workout for FAT BURN! 🔥
+        <b>30 MIN to BURN 300 CAL | Low Impact CARDIO Workout for FAT BURN! 
 
 </b><br>
         <i>31:56 minutes</i></p>
